@@ -1,0 +1,175 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 850px;
+	height: 100px;
+	position: relative;
+	left: 28%;
+	top: 35%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: arial black;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+/* LETTERS */
+
+@keyframes one_move {
+	0% { left: 0px; }
+	30% { left: 0px; }
+	100% { left: -230px; }
+
+}
+
+#one {
+	position: relative;
+	animation: one_move 3s ease;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes two_move {
+	0% { left: 0px; }
+	30% { left: 0px; }
+	100% { left: -320px; }
+
+}
+
+#two {
+	position: relative;
+	animation: two_move 3s ease;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes n_move {
+	0% { transform: rotate(0deg) translateX(-0px) rotate(0deg) ;}
+    15% { transform: rotate(0deg) translateX(-0px) rotate(0deg) ;}
+    100% { transform: rotate(-180deg) translateX(155px) rotate(180deg) ;}
+
+}
+
+#n {
+	position: relative;
+	animation: n_move 3s linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes m_move {
+    0% { right: 0px; opacity: 1; }
+    15% { right: 0px; opacity: 1; }
+    20% { right: 0px; opacity: 0; }
+    90% { right: 580px; opacity: 0; }
+    100% { right: 580px; opacity: 1; }
+
+}
+
+#m {
+	position: relative;
+	animation: m_move 3s linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes r_move {
+    0% { bottom: 0px; right: 0px; color:black;}
+    20% { bottom: 0px; right: 0px; color:black;}
+    50% { bottom: -200px; right: -60px; color:black;}
+    80% { bottom: -200px; right: -350px; color:#3336BF;}
+    100% {bottom: 0px; right: -350px; color:#3336BF;}
+
+}
+
+#rone {
+	position: relative;
+	animation: r_move 4s linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes s_move {
+    0% { right: 0px; opacity: 1; color:black;}
+    15% { right: 0px; opacity: 1; color:black;}
+    20% { right: 0px; opacity: 0; color:black;}
+    90% { right: -285px; opacity: 0; color:#3336BF;}
+    100% { right: -285px; opacity: 1; color:#3336BF;}
+
+}
+
+#s {
+	position: relative;
+	animation: s_move 3s linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes t_move {
+    0% { right: 0px; opacity: 1; color:black;}
+    15% { right: 0px; opacity: 1; color:black;}
+    20% { right: 0px; opacity: 0; color:black;}
+    90% { right: -280px; opacity: 0; color:#3336BF;}
+    100% { right: -280px; opacity: 1; color:#3336BF;}
+
+}
+
+#t {
+	position: relative;
+	animation: t_move 3s linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes a_move {
+    0% { bottom: 0px; right: 0px; color:black;}
+    20% { bottom: 0px; right: 0px; color:black;}
+    50% { bottom: 200px; right: -60px; color:black;}
+    80% { bottom: 200px; right: -500px; color:#3336BF;}
+    100% {bottom: 0px; right: -500px; color:#3336BF;}
+
+}
+
+#a {
+	position: relative;
+	animation: a_move 4s linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes e_move {
+    0% { bottom: 0px; color:black;}
+    20% { bottom: 0px; color:black;}
+    50% { bottom: 200px; color:black;}
+    100% {bottom: 0px; color:#3336BF;}
+
+}
+
+#e {
+	position: relative;
+	animation: e_move 4s alternate linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes rtwo_move {
+    0% { bottom: 0px; color:black;}
+    20% { bottom: 0px; color:black;}
+    50% { bottom: -200px; color:black;}
+    100% {bottom: 0px; color:#3336BF;}
+
+}
+
+#rtwo {
+	position: relative;
+	animation: rtwo_move 4s alternate linear;
+	animation-fill-mode: forwards;
+
+}
